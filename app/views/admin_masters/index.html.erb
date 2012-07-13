@@ -1,0 +1,8 @@
+<h1>カクテルレシピ検索</h1>
+
+<h2>管理者マスタ</h2>
+
+<% @adminmasters.each do |adminmaster| %>
+<%= link_to adminmaster.userid, admin_masters_path(adminmaster) %>
+<div>ユーザID:<%= adminmaster.userid %>&nbsp;ユーザ名称:<%= adminmaster.username %></div>
+<% end %>
